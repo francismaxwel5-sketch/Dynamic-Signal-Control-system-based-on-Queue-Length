@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="simple_4way_150m.net.xml"/>
+        <route-files value="afternoon.rou.xml"/>
+        <additional-files value="static_logic.add.xml"/>
+        
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/> 
+    </time>
+
+    <output>
+        <tripinfo-output value="static_tripinfos.xml"/>
+        
+        </output>
+
+    <report>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>

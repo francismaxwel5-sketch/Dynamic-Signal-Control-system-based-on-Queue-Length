@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd"><input>
+    <net-file value="simple_4way.net.xml"/>
+    <route-files value="morning.rou.xml"/>
+    <!-- IMPORTANT: The 'actuated_logic.add.xml' file must be loaded 
+         to define the traffic light as 'actuated' for TraCI control. -->
+    <additional-files value="actuated_logic.add.xml"/>
+</input>
+
+<time>
+    <begin value="0"/>
+    <end value="3600"/> 
+</time>
+
+<output>
+    <!-- Output files will now reflect the results of the actuated control -->
+    <tripinfo-output value="actuated_tripinfos.xml"/>
+    <statistic-output value="actuated_stats.xml"/>
+</output>
+
+<report>
+    <no-step-log value="true"/>
+</report>
+</configuration>

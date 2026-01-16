@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    
+    <vType id="motorcycle" vClass="motorcycle" length="2.0" width="0.7" maxSpeed="16.67" accel="3.5" decel="6.0" sigma="0.5" color="1,0,1" />
+    <vType id="car" vClass="passenger" length="4.5" width="1.8" maxSpeed="13.89" accel="3.0" decel="5.0" sigma="0.5" color="0,0,1" />
+    <vType id="bus" vClass="bus" length="12.0" width="2.5" maxSpeed="11.11" accel="1.8" decel="4.0" sigma="0.5" color="1,0.5,0" />
+    <vType id="truck" vClass="truck" length="10.0" width="2.5" maxSpeed="11.11" accel="1.0" decel="3.5" sigma="0.5" color="0.5,0.5,0.5" />
+    <vType id="three_wheeler" vClass="delivery" length="3.0" width="1.3" maxSpeed="13.89" accel="2.0" decel="4.0" sigma="0.5" color="0,1,0" />
+    <vType id="van" vClass="passenger" length="4.8" width="1.9" maxSpeed="13.89" accel="2.5" decel="4.5" sigma="0.5" color="0.5,0.5,1" />
+
+<route id="r_0" edges="n_in s_out"/>
+<route id="r_1" edges="n_in e_out"/>
+<route id="r_2" edges="e_in w_out"/>
+<route id="r_3" edges="s_in e_out"/>
+<route id="r_4" edges="w_in e_out"/>
+<route id="r_5" edges="e_in s_out"/>
+<route id="r_6" edges="e_in n_out"/>
+<route id="r_7" edges="s_in n_out"/>
+<route id="r_8" edges="w_in n_out"/>
+<route id="r_9" edges="w_in s_out"/>
+<route id="r_10" edges="n_in w_out"/>
+<route id="r_11" edges="s_in w_out"/>
+
+    <flow id="motorcycleFlow1" type="motorcycle" route="r_0" begin="0" end="3600" vehsPerHour="474"/>
+    <flow id="motorcycleFlow2" type="motorcycle" route="r_1" begin="0" end="3600" vehsPerHour="180"/>
+    <flow id="motorcycleFlow3" type="motorcycle" route="r_2" begin="0" end="3600" vehsPerHour="114"/>
+    <flow id="motorcycleFlow4" type="motorcycle" route="r_3" begin="0" end="3600" vehsPerHour="434"/>
+    <flow id="motorcycleFlow5" type="motorcycle" route="r_4" begin="0" end="3600" vehsPerHour="122"/>
+    <flow id="motorcycleFlow6" type="motorcycle" route="r_5" begin="0" end="3600" vehsPerHour="196"/>
+    <flow id="motorcycleFlow7" type="motorcycle" route="r_6" begin="0" end="3600" vehsPerHour="147"/>
+    <flow id="motorcycleFlow8" type="motorcycle" route="r_7" begin="0" end="3600" vehsPerHour="180"/>
+    <flow id="motorcycleFlow9" type="motorcycle" route="r_8" begin="0" end="3600" vehsPerHour="165"/>
+    <flow id="motorcycleFlow10" type="motorcycle" route="r_9" begin="0" end="3600" vehsPerHour="181"/>
+    <flow id="motorcycleFlow11" type="motorcycle" route="r_10" begin="0" end="3600" vehsPerHour="155"/>
+    <flow id="motorcycleFlow12" type="motorcycle" route="r_11" begin="0" end="3600" vehsPerHour="214"/>
+    <flow id="three_wheelerFlow1" type="three_wheeler" route="r_0" begin="0" end="3600" vehsPerHour="87"/>
+    <flow id="three_wheelerFlow2" type="three_wheeler" route="r_1" begin="0" end="3600" vehsPerHour="43"/>
+    <flow id="three_wheelerFlow3" type="three_wheeler" route="r_2" begin="0" end="3600" vehsPerHour="50"/>
+    <flow id="three_wheelerFlow4" type="three_wheeler" route="r_3" begin="0" end="3600" vehsPerHour="91"/>
+    <flow id="three_wheelerFlow5" type="three_wheeler" route="r_4" begin="0" end="3600" vehsPerHour="49"/>
+    <flow id="three_wheelerFlow6" type="three_wheeler" route="r_5" begin="0" end="3600" vehsPerHour="204"/>
+    <flow id="three_wheelerFlow7" type="three_wheeler" route="r_6" begin="0" end="3600" vehsPerHour="57"/>
+    <flow id="three_wheelerFlow8" type="three_wheeler" route="r_7" begin="0" end="3600" vehsPerHour="39"/>
+    <flow id="three_wheelerFlow9" type="three_wheeler" route="r_8" begin="0" end="3600" vehsPerHour="53"/>
+    <flow id="three_wheelerFlow10" type="three_wheeler" route="r_9" begin="0" end="3600" vehsPerHour="63"/>
+    <flow id="three_wheelerFlow11" type="three_wheeler" route="r_10" begin="0" end="3600" vehsPerHour="64"/>
+    <flow id="three_wheelerFlow12" type="three_wheeler" route="r_11" begin="0" end="3600" vehsPerHour="172"/>
+    <flow id="carFlow1" type="car" route="r_0" begin="0" end="3600" vehsPerHour="94"/>
+    <flow id="carFlow2" type="car" route="r_1" begin="0" end="3600" vehsPerHour="56"/>
+    <flow id="carFlow3" type="car" route="r_2" begin="0" end="3600" vehsPerHour="42"/>
+    <flow id="carFlow4" type="car" route="r_3" begin="0" end="3600" vehsPerHour="102"/>
+    <flow id="carFlow5" type="car" route="r_4" begin="0" end="3600" vehsPerHour="82"/>
+    <flow id="carFlow6" type="car" route="r_5" begin="0" end="3600" vehsPerHour="59"/>
+    <flow id="carFlow7" type="car" route="r_6" begin="0" end="3600" vehsPerHour="91"/>
+    <flow id="carFlow8" type="car" route="r_7" begin="0" end="3600" vehsPerHour="40"/>
+    <flow id="carFlow9" type="car" route="r_8" begin="0" end="3600" vehsPerHour="69"/>
+    <flow id="carFlow10" type="car" route="r_9" begin="0" end="3600" vehsPerHour="74"/>
+    <flow id="carFlow11" type="car" route="r_10" begin="0" end="3600" vehsPerHour="56"/>
+    <flow id="carFlow12" type="car" route="r_11" begin="0" end="3600" vehsPerHour="91"/>
+    <flow id="vanFlow1" type="van" route="r_0" begin="0" end="3600" vehsPerHour="14"/>
+    <flow id="vanFlow2" type="van" route="r_1" begin="0" end="3600" vehsPerHour="12"/>
+    <flow id="vanFlow3" type="van" route="r_2" begin="0" end="3600" vehsPerHour="2"/>
+    <flow id="vanFlow4" type="van" route="r_3" begin="0" end="3600" vehsPerHour="22"/>
+    <flow id="vanFlow5" type="van" route="r_4" begin="0" end="3600" vehsPerHour="20"/>
+    <flow id="vanFlow6" type="van" route="r_5" begin="0" end="3600" vehsPerHour="14"/>
+    <flow id="vanFlow7" type="van" route="r_6" begin="0" end="3600" vehsPerHour="22"/>
+    <flow id="vanFlow8" type="van" route="r_7" begin="0" end="3600" vehsPerHour="12"/>
+    <flow id="vanFlow9" type="van" route="r_8" begin="0" end="3600" vehsPerHour="8"/>
+    <flow id="vanFlow10" type="van" route="r_9" begin="0" end="3600" vehsPerHour="20"/>
+    <flow id="vanFlow11" type="van" route="r_10" begin="0" end="3600" vehsPerHour="11"/>
+    <flow id="vanFlow12" type="van" route="r_11" begin="0" end="3600" vehsPerHour="18"/>
+    <flow id="busFlow1" type="bus" route="r_0" begin="0" end="3600" vehsPerHour="13"/>
+    <flow id="busFlow2" type="bus" route="r_1" begin="0" end="3600" vehsPerHour="2"/>
+    <flow id="busFlow3" type="bus" route="r_2" begin="0" end="3600" vehsPerHour="3"/>
+    <flow id="busFlow4" type="bus" route="r_3" begin="0" end="3600" vehsPerHour="17"/>
+    <flow id="busFlow5" type="bus" route="r_4" begin="0" end="3600" vehsPerHour="8"/>
+    <flow id="busFlow6" type="bus" route="r_5" begin="0" end="3600" vehsPerHour="4"/>
+    <flow id="busFlow7" type="bus" route="r_6" begin="0" end="3600" vehsPerHour="9"/>
+    <flow id="busFlow8" type="bus" route="r_7" begin="0" end="3600" vehsPerHour="1"/>
+    <flow id="busFlow9" type="bus" route="r_8" begin="0" end="3600" vehsPerHour="6"/>
+    <flow id="busFlow10" type="bus" route="r_9" begin="0" end="3600" vehsPerHour="9"/>
+    <flow id="busFlow11" type="bus" route="r_10" begin="0" end="3600" vehsPerHour="12"/>
+    <flow id="busFlow12" type="bus" route="r_11" begin="0" end="3600" vehsPerHour="4"/>
+    <flow id="truckFlow1" type="truck" route="r_0" begin="0" end="3600" vehsPerHour="13"/>
+    <flow id="truckFlow2" type="truck" route="r_1" begin="0" end="3600" vehsPerHour="8"/>
+    <flow id="truckFlow3" type="truck" route="r_2" begin="0" end="3600" vehsPerHour="4"/>
+    <flow id="truckFlow4" type="truck" route="r_3" begin="0" end="3600" vehsPerHour="11"/>
+    <flow id="truckFlow5" type="truck" route="r_4" begin="0" end="3600" vehsPerHour="3"/>
+    <flow id="truckFlow6" type="truck" route="r_5" begin="0" end="3600" vehsPerHour="15"/>
+    <flow id="truckFlow7" type="truck" route="r_6" begin="0" end="3600" vehsPerHour="15"/>
+    <flow id="truckFlow8" type="truck" route="r_7" begin="0" end="3600" vehsPerHour="16"/>
+    <flow id="truckFlow9" type="truck" route="r_8" begin="0" end="3600" vehsPerHour="11"/>
+    <flow id="truckFlow10" type="truck" route="r_9" begin="0" end="3600" vehsPerHour="12"/>
+    <flow id="truckFlow11" type="truck" route="r_10" begin="0" end="3600" vehsPerHour="18"/>
+    <flow id="truckFlow12" type="truck" route="r_11" begin="0" end="3600" vehsPerHour="10"/>
+
+</routes>

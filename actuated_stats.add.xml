@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+    <!-- 
+    Edge Data Collector (for queue length analysis) 
+    Collects performance data (including queue length and waiting time) 
+    for all four incoming edges to junction 'C'.
+    -->
+    <edgeData id="actuated_stats_collector" file="actuated_stats.xml" begin="0" end="3600" freq="60">
+        <!-- Input edges leading to junction C -->
+        <edge id="n_in"/>
+        <edge id="e_in"/>
+        <edge id="s_in"/>
+        <edge id="w_in"/>
+    </edgeData>
+
+    <!-- Trip Info Output for overall vehicle performance (duration, time loss, etc.) -->
+    <tripinfo-output value="actuated_tripinfos.xml" />
+
+</additional>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <node id="C" x="0.0" y="0.0" type="traffic_light"/>
+    
+    <!-- Nodes moved to 150m distance from the center (0,0) -->
+    <node id="N" x="0.0" y="150.0" type="priority"/>
+    <node id="E" x="150.0" y="0.0" type="priority"/>
+    <node id="S" x="0.0" y="-150.0" type="priority"/>
+    <node id="W" x="-150.0" y="0.0" type="priority"/>
+</nodes>

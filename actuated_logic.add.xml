@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<additional>
+    <tlLogic id="C" type="actuated" programID="traci_control" offset="0">
+        <phase duration="1" state="rrrrrrrrrrrr"/>
+    </tlLogic>
+
+    <edgeData id="stats" file="actuated_stats.xml" freq="60" excludeEmpty="true"/>
+</additional>

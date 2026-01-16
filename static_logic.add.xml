@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+    <!-- Traffic Light Logic -->
+    <tlLogic id="C" type="static" programID="round_robin" offset="0">
+        <phase duration="25" state="GGgrrrrrrrrr"/> 
+        <phase duration="3"  state="yyyrrrrrrrrr"/> 
+        <phase duration="25" state="rrrGGgrrrrrr"/>
+        <phase duration="3"  state="rrryyyrrrrrr"/> 
+        <phase duration="25" state="rrrrrrGGgrrr"/>
+        <phase duration="3"  state="rrrrrryyyrrr"/> 
+        <phase duration="25" state="rrrrrrrrrGGg"/>
+        <phase duration="3"  state="rrrrrrrrryyy"/> 
+    </tlLogic>
+
+    <!-- ADD THIS LINE: Generates queue length data -->
+    <edgeData id="stats" file="static_stats.xml" begin="0" end="3600" freq="60" />
+</additional>
